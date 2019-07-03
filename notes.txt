@@ -1,5 +1,22 @@
+#Components 1
+
 ng generate component course-card
 
 html -> custom htm course-card
 
 3 X directive
+
+#Components 2
+
+inputs
+
+db-data.ts
+
+app.component.ts -> import {COURSES} from 'db-data'
+
+input proprty title [title]
+
+
+ADD model object types
+
+import {Course} from '../model/course'
