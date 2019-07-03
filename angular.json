@@ -31,9 +31,6 @@
             "scripts": [
               {
                 "input": "node_modules/document-register-element/build/document-register-element.js"
-              },
-              {
-                "input": "node_modules/document-register-element/build/document-register-element.js"
               }
             ]
           },
@@ -54,14 +51,6 @@
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true
-            },
-            "fr": {
-              "aot": true,
-              "outputPath": "dist/angular-course-fr/",
-              "i18nFile": "src/locale/messages.fr.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "fr",
-              "i18nMissingTranslation": "ignore"
             }
           }
         },
@@ -73,9 +62,6 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-course:build:production"
-            },
-            "fr": {
-              "browserTarget": "angular-course:build:fr"
             }
           }
         },
