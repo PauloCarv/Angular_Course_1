@@ -16,9 +16,9 @@
     <app-course-card [title]="ngrxCourse.description"></app-course-card>
 -->
 
-    <app-course-card [course]="coreCourse"></app-course-card>
-    <app-course-card [course]="rxjsCourse"></app-course-card>
-    <app-course-card [course]="ngrxCourse"></app-course-card>
+    <app-course-card (courseSelected)="onCourseSelected($event)" [course]="coreCourse"></app-course-card>
+    <app-course-card (courseSelected)="onCourseSelected($event)" [course]="rxjsCourse"></app-course-card>
+    <app-course-card (courseSelected)="onCourseSelected($event)" [course]="ngrxCourse"></app-course-card>
 </div>
 
 
