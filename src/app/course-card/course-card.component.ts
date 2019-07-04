@@ -4,7 +4,8 @@ import {Course} from '../model/course';
 
 // decorators
 @Component({
-  selector: 'app-course-card',
+// tslint:disable-next-line: component-selector
+  selector: 'course-card',
   templateUrl: './course-card.component.html',
   styleUrls: ['./course-card.component.css']
 })
@@ -14,7 +15,10 @@ export class CourseCardComponent implements OnInit {
   @Input()
   course: Course;
   // title: string;
-// tslint:disable-next-line: no-output-rename
+  @Input()
+  cardIndex: number;
+
+  // tslint:disable-next-line: no-output-rename
   @Output('courseSelected')
   courseEmitter = new EventEmitter<Course>();
 

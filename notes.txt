@@ -70,3 +70,44 @@ ADD alias to eventEmmitter
 
 ####################################################################
 ##### Components Lesson 4 directives
+
+NGFOR - directive 
+
+app-component.ts  
+ADD  courses = COURSES for all courses and removed specific ones
+
+app-component.html
+ADD ngFor elem 
+
+    <app-course-card *ngFor="let course of courses"
+        (courseSelected)="onCourseSelected($event)"
+        [course]="course"></app-course-card>
+
+****add index
+"let course of courses; index as i"
+create new imput parameter [cardIndex]="i + 1"
+
+course-card-component.ts 
+Create new imput 
+
+course-card-component.html
+ADDED input index on description {{cardIndex + ' - ' +course.description}}
+
+ADDED input first index as isFirst on ngFor
+
+ADDED class is first [class.is-first]="true"
+
+changed to
+
+ADDED class is-first [class.is-first]="isFirst"
+
+ADDED input last index as isLast on ngFor
+
+ADDED class is-last [class.is-last]="true"
+changed to
+ADDED class is-last [class.is-last]="isLast"
+
+ADDED input odd as isOdd and even isEven on ngFor
+ADDED class
+ [class.is-even]="isEven"
+        [class.is-odd]="isOdd"
