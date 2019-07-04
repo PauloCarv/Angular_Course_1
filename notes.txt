@@ -6,6 +6,7 @@ html -> custom htm course-card
 
 3 X directive
 
+
 #Components 2
 
 inputs
@@ -21,8 +22,8 @@ ADD model object types
 
 import {Course} from '../model/course'
 
-
-#Components Lesson 3
+####################################################################
+##### Components Lesson 3
 
 custom events
 
@@ -65,3 +66,7 @@ ADD alias to eventEmmitter
 // tslint:disable-next-line: no-output-rename
   @Output('courseSelected')
   courseEmitter = new EventEmitter<Course>();
+
+
+####################################################################
+##### Components Lesson 4 directives
