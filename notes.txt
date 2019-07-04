@@ -6,6 +6,7 @@ html -> custom htm course-card
 
 3 X directive
 
+
 #Components 2
 
 inputs
@@ -20,3 +21,52 @@ input proprty title [title]
 ADD model object types
 
 import {Course} from '../model/course'
+
+####################################################################
+##### Components Lesson 3
+
+custom events
+
+course-card-component.html
+add event button html - (click)="onCourseViewed()"
+
+course-card-component.ts
+add event onCourseViewed with log to console
+
+app-component.html 
+add event click oncardclick
+
+app-component.ts
+oncardclick whit console log for card
+
+app-component.html
+add custom event (replace click) - (courseSelected)="onCourseSelected()"
+
+app-component.ts
+rename oncardclick to onCourseSelected
+
+course-card-component.ts
+Create event Emiter - courseSelected = new EventEmitter<Course>();
+function onCourseViewed add this.courseSelected.emit(this.course); 
+@output()
+
+
+app-component.html
+add arg $event on onCourseSelected call
+
+app-component.ts 
+ADD arg course:Course and into console also
+!! add decorator output on event EventEmitter
+
+app-component.html
+add custom event (replace click) - (courseSelected)="onCourseSelected()" on remaining cards
+
+course-card-component.ts
+ADD alias to eventEmmitter
+// tslint:disable-next-line: no-output-rename
+  @Output('courseSelected')
+  courseEmitter = new EventEmitter<Course>();
+
+
+####################################################################
+##### Components Lesson 4 directives
