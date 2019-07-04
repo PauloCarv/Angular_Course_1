@@ -90,7 +90,7 @@ create new imput parameter [cardIndex]="i + 1"
 course-card-component.ts 
 Create new imput 
 
-course-card-component.html
+app-component.html
 ADDED input index on description {{cardIndex + ' - ' +course.description}}
 
 ADDED input first index as isFirst on ngFor
@@ -117,3 +117,21 @@ ADDED class
 ##### Components Lesson 5 directives
 
 NGFIF - directive 
+
+course-card-component.html
+ADD *ngIf="true" on img elem test toggle true false
+changed to *ngIf="course.iconUrl"
+chenged to added function isImageVisible()
+
+course-card-component.ts 
+added function isImageVisible()
+
+db-data.ts
+Added undefined value undefined
+
+course-card-component.html
+added elvis operator
+changed elvis operator with ng-if on card <div class="course-card" *ngIf="course">
+added else on isImageVisible() function
+added <ng-template #noimage>
+
