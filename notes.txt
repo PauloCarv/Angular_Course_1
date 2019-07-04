@@ -111,3 +111,9 @@ ADDED input odd as isOdd and even isEven on ngFor
 ADDED class
  [class.is-even]="isEven"
         [class.is-odd]="isOdd"
+
+
+####################################################################
+##### Components Lesson 5 directives
+
+NGFIF - directive 
